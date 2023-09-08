@@ -1,0 +1,20 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    width: 1000px;
+}
+.sidebar {
+    max-width: 440px;
+    background-color: #e51937;
+    color: #fff;
+    padding: 51px 0 63px 52px;
+    z-index: 222;
+}
+.section {
+    max-width: 1400px;
+    margin: 0 auto;
+    &__container {
+        display: flex;
+    }
+}

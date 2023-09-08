@@ -1,0 +1,39 @@
+.link {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size  : 18px;
+  display    : flex;
+  align-items: center;
+  line-height: 28px;
+
+  &-block {
+
+    max-width  : 1660px;
+    margin     : 0 auto;
+    padding    : 0 15px;
+    display    : flex;
+    margin-top : 20px;
+    align-items: center;
+  }
+
+  &__img {
+    width       : 22px;
+    margin-right: 12px;
+    height      : 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .link-block {
+    font-size  : 14px;
+    line-height: 20px;
+    align-items: start;
+    margin-top : 10px;
+  }
+
+  .link__img {
+    margin-right: 4px;
+    width       : 18px;
+    height      : 18px;
+  }
+}

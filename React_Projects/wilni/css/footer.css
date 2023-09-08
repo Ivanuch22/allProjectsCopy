@@ -1,0 +1,219 @@
+.footer .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__top {
+  background-color: #333;
+  padding: 60px 0;
+}
+
+.footer__top a {
+  color: #fff;
+}
+
+.footer__logo-img {
+  display: block;
+  width: 191px;
+}
+
+.footer__logo-description {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-top: 4px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__nav-link {
+  display: block;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer__nav-link:hover {
+  color: #B31217;
+}
+
+.footer__nav-link-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer__nav-link-social:hover {
+  color: #B31217;
+}
+
+.footer__nav-link-social:last-child {
+  margin-bottom: 0;
+}
+
+.footer__nav-link-social-img {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__about-item {
+  color: #fff;
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.footer__about-item:first-child {
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.footer__about-item:last-child {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.footer__bottom {
+  background-color: #000;
+  color: #fff;
+  padding: 24px 0;
+}
+
+.footer__bottom-left {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.footer__bottom-link {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 40px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1160px) {
+  .footer__bottom {
+    padding: 32px 0;
+  }
+  .footer .container {
+    padding: 0 25px;
+  }
+  .footer__bottom .container {
+    padding: 0 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer__bottom-right {
+    margin-bottom: 16px;
+  }
+  .footer__bottom-link {
+    margin-left: 0;
+    margin-right: 40px;
+  }
+  .footer__bottom-link:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 975px) {
+  .footer__logo-img {
+    width: 143.68px;
+  }
+  .footer__logo-description {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .footer__nav-link {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .footer__nav-link-social {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer__nav-link-social-img {
+    margin-right: 8px;
+  }
+  .footer__about-item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer__top {
+    padding: 24px 0;
+  }
+  .footer_logo {
+    margin-bottom: 15px;
+    width: 146.68px;
+  }
+  .footer .container {
+    padding: 0 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__bottom .container {
+    padding: 0 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer__nav-link {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 8px;
+  }
+  .footer__nav-link:last-child {
+    margin-bottom: 16px;
+  }
+  .footer__about {
+    margin-top: 12px;
+  }
+  .footer__bottom {
+    padding: 24px 0;
+  }
+  .footer__about-item:first-child {
+    margin-bottom: 4px;
+  }
+  .footer__bottom-link {
+    display: block;
+    margin-bottom: 12px;
+  }
+}

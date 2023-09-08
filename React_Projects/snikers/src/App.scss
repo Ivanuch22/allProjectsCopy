@@ -1,0 +1,81 @@
+@import "null_style.scss";
+
+body {
+  background-color: #E7F6FF;
+  color           : #000;
+  font-family     : 'Inter';
+  font-weight     : 700;
+}
+
+.app {
+  padding : 83px 30px;
+  position: relative;
+}
+
+.wrapper {
+  background   : #FFFFFF;
+  box-shadow   : 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width    : 1080px;
+  padding      : 40px;
+  margin       : 0 auto;
+  position     : relative;
+}
+
+
+// main
+.content {
+  &__top {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+  }
+
+  &__top-title {
+    font-size  : 32px;
+    line-height: 39px;
+    margin     : 30px 0;
+  }
+
+  &__top-input {
+    width        : 250px;
+    height       : 45px;
+    border       : 1px solid #F3F3F3;
+    border-radius: 10px;
+    padding      : 13px 20px 15px;
+    font-weight  : 500;
+
+    &:focus {
+      border: 1px solid #F3F3F3;
+
+    }
+
+    &::placeholder {
+      font-size  : 14px;
+      line-height: 17px;
+      color      : #C4C4C4;
+
+    }
+  }
+
+  &__main {
+    display              : grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap                  : 40px 40px;
+    position             : relative;
+    min-height           : 100px;
+  }
+}
+
+.nothingFound {
+  font-size  : 30px;
+  text-align : center;
+  position   : absolute;
+  top        : 25px;
+  left       : 50%;
+  font-weight: 600;
+  transform  : translateX(-50%);
+  color      : #9D9D9D;
+  opacity    : 0.7;
+
+}

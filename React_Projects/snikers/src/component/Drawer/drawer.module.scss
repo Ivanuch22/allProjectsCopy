@@ -1,0 +1,242 @@
+.drawer {
+  background: #0000007a;
+  position  : fixed;
+  width     : 100%;
+  height    : 100vh;
+  left      : 0px;
+  top       : 0px;
+  z-index   : 10;
+  opacity   : 1;
+}
+
+.modalWindow {
+  opacity   : 0 !important;
+  z-index   : -3 !important;
+  transition: all 0.3s !important;
+  position  : relative;
+  left      : 200000px;
+}
+
+.modalWindowActive {
+  opacity: 1 !important;
+  z-index: 1 !important;
+  left   : 0px;
+
+}
+
+.nothingFound {
+  font-size: 43px;
+  top      : 50%;
+  left     : 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sideBar {
+  width             : 385px;
+  height            : 100%;
+  top               : 0;
+  position          : absolute;
+  background        : #FFFFFF;
+  box-shadow        : -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding           : 30px;
+  display           : flex;
+  flex-direction    : column;
+  animation-name    : rightToLeft;
+  animation-duration: 0.3s;
+  right             : 0;
+}
+
+.sideBarContainer {
+  overflow-y   : auto;
+  margin-bottom: 120px;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #b9b6b684;
+  }
+
+  /* Handle */
+  &:-webkit-scrollbar-thumb {
+    background: rgb(167, 80, 80);
+    z-index   : 23;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgb(167, 80, 80);
+  }
+}
+
+.title {
+  font-weight  : 700;
+  font-size    : 24px;
+  line-height  : 29px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background   : #FFFFFF;
+  border       : 1px solid #F3F3F3;
+  border-radius: 20px;
+  padding      : 20px;
+  display      : flex;
+  align-items  : center;
+  margin-bottom: 20px;
+}
+
+.cardImg {
+  display     : block;
+  width       : 70px;
+  height      : 70px;
+  margin-right: 20px;
+}
+
+.cardTitle {
+  font-weight  : 400;
+  font-size    : 14px;
+  line-height  : 17px;
+  margin-bottom: 8px;
+}
+
+.cardPrice {
+  font-weight: 700;
+  font-size  : 14px;
+  line-height: 17px;
+}
+
+.cardButton {
+  min-width      : 32px;
+  height         : 32px;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  background     : #FFFFFF;
+  border         : 1px solid #DBDBDB;
+  border-radius  : 8px;
+
+  svg {
+    transform: rotate(45deg);
+  }
+}
+
+.sideBarText {
+  font-weight    : 400;
+  font-size      : 16px;
+  line-height    : 19px;
+  display        : flex;
+  justify-content: space-between;
+  position       : absolute;
+  margin-top     : 20px;
+  bottom         : 84px;
+  left           : 20px;
+  right          : 20px;
+
+}
+
+.first {
+  bottom: 120px;
+}
+
+.sideBarTextSpan {
+  font-weight: 600;
+  font-size  : 16px;
+  line-height: 19px;
+}
+
+.button {
+  background   : #9DD558;
+  border-radius: 18px;
+  text-align   : center;
+  padding      : 18px 0;
+  font-weight  : 600;
+  font-size    : 16px;
+  line-height  : 19px;
+  color        : #FFFFFF;
+  align-self   : start;
+  position     : absolute;
+  bottom       : 20px;
+  left         : 20px;
+  right        : 20px;
+  transition   : all 0.3s;
+
+  &:hover {
+    background: #8ad133;
+  }
+}
+
+.nothingBox {
+  justify-content: center;
+  align-items    : center;
+  display        : flex;
+  flex-direction : column;
+  margin         : auto;
+  width          : 285px;
+}
+
+.nothingTitle {
+  font-weight  : 600;
+  font-size    : 22px;
+  line-height  : 27px;
+  margin-top   : 21px;
+  margin-bottom: 9px;
+}
+
+.nothingDescription {
+  font-weight: 400;
+  font-size  : 16px;
+  line-height: 150%;
+  text-align : center;
+  color      : #000000;
+  opacity    : 0.4;
+}
+
+@keyframes rightToLeft {
+  from {
+    right: -300px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+.modal {
+  border-radius   : 30px;
+  padding         : 0 20px;
+  background-color: #FFFFFF;
+  width           : 40vw;
+  top             : 50%;
+  left            : 50%;
+  position        : absolute;
+  transform       : translate(-50%, -50%);
+  padding-bottom  : 120px;
+}
+
+.modalTitle {
+  text-align: center;
+  margin    : 30px 0;
+  font-size : 35px;
+}
+
+.inputsBlock {
+  display              : grid;
+  gap                  : 20px 30px;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+}
+
+.input {
+  padding      : 15px;
+  border-radius: 10px;
+  border       : 1px solid #E8E8E8;
+
+  &:last-child {
+    grid-column-start: 1;
+    grid-column-end  : 3;
+
+  }
+
+}

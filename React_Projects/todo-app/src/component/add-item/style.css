@@ -1,0 +1,35 @@
+.block-input {
+    background   : #FAF3DD;
+    border-radius: 30px;
+    width        : 100%;
+    padding      : 15px;
+    font-size    : 16px;
+    color        : #6279B8;
+    font-weight  : 400;
+    padding-right: 50px;
+    line-height  : 20px;
+    padding-left : 20px;
+
+
+}
+
+.block-bottom {
+    position: relative;
+}
+
+.block-input::placeholder {
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 20px;
+    color      : #6279B8;
+    opacity    : 1;
+}
+
+button {
+    background-color: transparent;
+    color           : #6279B8;
+    position        : absolute;
+    right           : 20px;
+    top             : 50%;
+    transform       : translateY(-50%);
+}

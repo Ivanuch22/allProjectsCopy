@@ -1,0 +1,134 @@
+.sidebar {
+    width     : 30%;
+    padding   : 20px;
+    height    : 100vh;
+    overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #4e33ff;
+
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: darkgrey;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 1px;
+}
+
+@media(max-width:630px) {
+    .sidebar {
+        width           : 100%;
+        background-color: rgb(0, 0, 0);
+        min-height      : 100vh;
+    }
+}
+
+.sidebar__note {
+    transition      : all 0.3s;
+    border-radius   : 20px;
+    position        : relative;
+    padding         : 20px;
+    width           : 100%;
+    background-color: rgb(26, 24, 24);
+    margin-bottom   : 20px;
+    cursor          : pointer;
+}
+
+.sidebar__note.active {
+    background-color: #4e33ff;
+}
+
+.sidebar__title {
+    margin-bottom: 5px;
+    font-weight  : 600;
+    word-break   : break-word;
+    white-space  : nowrap;
+    font-size    : 22px;
+    line-height  : 150%;
+    overflow     : hidden;
+}
+
+.sidebar__description {
+    word-break   : break-word;
+    margin-bottom: 10px;
+    padding-right: 50px;
+}
+
+.sidebar__time {
+    transform: translateY(10px);
+    opacity  : 0.8;
+}
+
+.sidebar__delete {
+    position : absolute;
+    transform: translateY(-50%);
+    color    : red;
+    top      : 50%;
+    right    : 20px;
+}
+
+@media(max-width:630px) {
+    .sidebar__note {
+        width: 48%;
+    }
+}
+
+@media(max-width:630px) {
+    .sidebar__block {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: space-between;
+    }
+}
+
+.sidebar__button {
+    background      : transparent;
+    background-color: #4e33ff;
+    font-size       : 32px;
+    padding         : 10px 15px;
+    width           : 100%;
+    border-radius   : 20px;
+    color           : #ffff;
+    font-weight     : 600;
+    margin-bottom   : 30px;
+    transition      : all 0.3s;
+}
+
+.sidebar__button:hover {
+    -webkit-box-shadow: 0px 0px 26px 9px rgba(78, 51, 255, 0.48);
+    box-shadow        : 0px 0px 26px 9px rgba(78, 51, 255, 0.48);
+}
+
+@media(max-width:800px) {
+    .sidebar__button {
+        font-size: 26px;
+    }
+}
+
+@media(max-width:630px) {
+
+    /* .sidebar__button {
+        width   : 40px;
+        position: absolute;
+        bottom  : 0;
+        height  : 40px;
+        overflow: hidden;
+        right   : 23px;
+        color   : transparent;
+    }
+
+    .sidebar__button::before {
+        position: absolute;
+        content : '+';
+        bottom  : 3px;
+        z-index : 1;
+        width   : auto;
+        right   : 12px;
+        height  : auto;
+        color   : #fff;
+    } */
+
+}

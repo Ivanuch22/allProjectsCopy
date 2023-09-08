@@ -1,0 +1,467 @@
+.main {
+  &__banner-block {
+    display        : flex;
+    padding        : 30px 0;
+    justify-content: space-between;
+  }
+
+  &__banner-item {
+    width: 32%;
+  }
+
+  &__slider {
+    width   : 100%;
+    position: relative;
+  }
+
+  &__slider-container {
+    position: relative;
+    width   : 100%;
+    overflow: hidden;
+  }
+
+  &__slide {
+    width         : 100%;
+    position      : relative;
+    padding-bottom: 20px;
+    height        : 88%;
+    margin-right  : 32px;
+    overflow      : hidden;
+
+  }
+
+  &__slide-img-block {
+    border-radius: 20px;
+    overflow     : hidden;
+    position     : relative;
+    display      : block;
+
+    &::before {
+      border-radius: 20px;
+      overflow     : hidden;
+      position     : absolute;
+      left         : 0;
+      right        : 0;
+      z-index      : 2;
+      top          : 0;
+      bottom       : 0;
+      content      : '';
+      background   : linear-gradient(0deg, rgba(47, 47, 47, 0.85) 0%, rgba(47, 47, 47, 0) 100%);
+      border-radius: 20px;
+    }
+
+  }
+
+
+
+  &__slide-img {
+    width : 104.4%;
+    height: auto;
+  }
+
+  &__slide-text {
+    position: absolute;
+    bottom  : 60px;
+    z-index : 2;
+    left    : 134px;
+    width   : 48%;
+  }
+
+  &__slide-time {
+    font-family   : 'Raleway';
+    font-style    : normal;
+    font-weight   : 400;
+    font-size     : 18px;
+    line-height   : 32px;
+    letter-spacing: -0.02em;
+    color         : #BDBDBD;
+  }
+
+  &__slide-title {
+    font-family  : 'Oswald';
+    font-style   : normal;
+    font-weight  : 400;
+    font-size    : 32px;
+    color        : #fff;
+    line-height  : 47px;
+    margin-bottom: 12px;
+  }
+
+  &__slide-description {
+    margin-bottom : 8px;
+    font-family   : 'Raleway';
+    font-style    : normal;
+    font-weight   : 400;
+    color         : #fff;
+    font-size     : 20px;
+    line-height   : 160%;
+    /* or 160% */
+    letter-spacing: -0.02em;
+  }
+
+  &__slide-link {
+    font-family   : 'Oswald';
+    font-style    : normal;
+    font-weight   : 400;
+    font-size     : 20px;
+    line-height   : 160%;
+    letter-spacing: 0.02em;
+    color         : #B31217;
+
+  }
+
+  &__slide-next,
+  &__slide-prev {
+    width          : 48px;
+    height         : 48px;
+    background     : #FFFFFF;
+    opacity        : 0.8;
+    position       : absolute;
+    top            : 50%;
+    transform      : translateY(-50%);
+    z-index        : 2;
+    left           : 40px;
+    border-radius  : 50%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    transition     : all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    img {
+      display: block;
+      width  : 8px;
+      height : 16px;
+
+    }
+  }
+
+  &__slide-next {
+    right: 40px;
+    left : auto;
+  }
+
+  &__about {
+    margin-top     : 48px;
+    display        : flex;
+    justify-content: space-between;
+    margin-bottom  : 60px;
+  }
+
+  &__column {
+    width: 49%;
+  }
+
+  &__img {
+    width : 100%;
+    height: auto;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    margin-bottom: 8px;
+  }
+
+  &__description-li {
+    margin-left: 32px;
+    position   : relative;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    &::before {
+      content      : "";
+      position     : absolute;
+      left         : -23px;
+      top          : 16px;
+      transform    : translateY(-50%);
+      width        : 8px;
+      height       : 8px;
+      border-radius: 50%;
+      background   : #B31217
+    }
+  }
+
+  &__button {
+    margin-top: 23px;
+  }
+
+  &__row {
+    display: flex;
+
+  }
+
+  &__row-block {
+    width   : 25%;
+    position: relative;
+  }
+
+  &__row-text-block {
+    position  : absolute;
+    color     : #fff;
+    text-align: center;
+    top       : 50%;
+    left      : 50%;
+    transform : translate(-50%, -50%);
+    width     : 100%;
+  }
+
+  &__row-text-number {
+    font-family   : 'Oswald';
+    font-style    : normal;
+    font-weight   : 500;
+    font-size     : 2.5vw;
+    line-height   : 120%;
+    letter-spacing: 0.01em;
+  }
+
+  &__row-text-title {
+    text-transform: uppercase;
+    font-family   : 'Oswald';
+    font-style    : normal;
+    width         : 100%;
+    font-weight   : 500;
+    font-size     : 1.25vw;
+    line-height   : 150%;
+    letter-spacing: 0.01em;
+
+  }
+
+  &__row-text-description {
+    font-family   : 'Raleway';
+    font-style    : normal;
+    font-weight   : 400;
+    font-size     : 1.2vw;
+    line-height   : 150%;
+    max-width     : 90%;
+    margin        : 0 auto;
+    letter-spacing: -0.02em;
+  }
+
+  .swiper {
+    width         : 100%;
+    padding-bottom: 24px;
+  }
+
+  .swiper-pagination-bullet {
+    border          : 2px solid #BDBDBD;
+    width           : 32px;
+    height          : 4px;
+    background-color: #BDBDBD;
+    border-radius   : 0;
+    height          : 0;
+    opacity         : 0.8;
+    transition      : all 0.3s;
+    bottom          : 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    border          : 2px solid #B31217;
+    height          : 4px;
+    background-color: #B31217;
+  }
+
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    margin: 0 8px !important;
+  }
+}
+
+
+
+
+///adaptive
+
+
+@media (max-width: 1160px) {
+  .banner__description {
+    font-size  : 15px;
+    line-height: 24px;
+  }
+
+
+  .main__slide-time {
+    font-size  : 16px;
+    line-height: 24px;
+  }
+
+  .main__slide-title {
+    font-size  : 20px;
+    line-height: 30px;
+  }
+
+  .main__slide-description {
+    font-size  : 16px;
+    line-height: 24px;
+  }
+
+  .main__slide-link {
+    font-size  : 16px;
+    line-height: 24px;
+  }
+
+  .main__slide-text {
+    left     : 80px;
+    min-width: 69%;
+  }
+
+  .main .main__slide-next,
+  .main .main__slide-prev {
+    width : 28px;
+    height: 28px;
+  }
+
+  .main__about {
+    margin        : 0;
+    flex-direction: column-reverse;
+    position      : relative;
+    padding-top   : 80px;
+  }
+
+  .main__column {
+    margin-bottom: 17px;
+    width        : 100%;
+  }
+
+  .main__title {
+    position : absolute;
+    top      : 0;
+    left     : 50%;
+    transform: translateX(-50%);
+  }
+
+  .main__description-li {
+    margin-left: 25px;
+  }
+
+  .main__button {
+    margin-top: 16px;
+  }
+}
+
+@media(max-width:990px) {
+
+  .main__banner-block {
+    padding: 20px 0;
+  }
+
+  //slider 
+
+  .main__slide-img {
+    width: 159%;
+  }
+
+  .main__slide-img-block,
+  .main__slide-img-block::before {
+    border-radius: 8px;
+  }
+
+  .main .swiper {
+    padding-bottom: 0;
+  }
+
+  .swiper-wrapper {
+    height: 100% !important;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 0;
+  }
+
+  .main .main__slide-next {
+    right: 16px;
+  }
+
+  .main .main__slide-prev {
+    left: 16px;
+  }
+
+  .main__slide-text {
+    bottom: 37px;
+  }
+
+  .main__slide-title {
+    margin-bottom: 8px;
+  }
+
+}
+
+@media(max-width: 750px) {
+  .main__slide-text {
+    width   : 100%;
+    position: relative;
+    left    : 0;
+    bottom  : 0;
+    color   : #2F2F2F;
+  }
+
+  .main__slide-title,
+  .main__slide-description {
+    color: #2F2F2F;
+
+  }
+}
+
+@media(max-width: 610px) {
+  .helpArmy__buttons {
+    .redButton {
+      padding: 12px 14px;
+    }
+
+    .button-transparent {
+      font-weight   : 500;
+      font-size     : 14px;
+      line-height   : 19px;
+      /* identical to box height, or 136% */
+      padding       : 12px 14px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .main__about {
+    padding-top: 50px;
+  }
+
+  .main__row {
+    flex-wrap: wrap;
+  }
+
+  .main__row-block {
+    width: 50%;
+  }
+
+  .main__row-text-number {
+    font-size: 7.5vw;
+  }
+
+  .main__row-text-title {
+    font-size: 3.5vw;
+  }
+
+  .main__row-text-description {
+    font-size: 3.2vw;
+  }
+
+  .main__banner-block {
+    display: block;
+  }
+
+  .main__banner-item {
+    margin-bottom: 16px;
+    display      : block;
+    width        : 100%;
+  }
+}

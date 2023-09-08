@@ -1,0 +1,59 @@
+:root {
+  --first : #E52D27;
+  --second: #B31217;
+}
+
+.redButton {
+  font-family     : 'Oswald';
+  font-weight     : 500;
+  font-size       : 18px;
+  line-height     : 27px;
+  letter-spacing  : 1px;
+  text-transform  : uppercase;
+  color           : #FFFFFF;
+  padding         : 12px 32px;
+  border-radius   : 8px;
+  background-color: transparent;
+  position        : relative;
+  overflow        : hidden;
+
+  &::before {
+    content      : '';
+    position     : absolute;
+    left         : 0;
+    right        : 0;
+    top          : 0;
+    bottom       : 0;
+    border-radius: 8px;
+    z-index      : -1;
+    background   : linear-gradient(273.47deg, #E52D27 0%, #B31217 100%);
+    transition   : all 0.3s;
+  }
+
+  &:hover {
+    &::before {
+      left: -1500px;
+    }
+  }
+}
+
+@media (max-width: 1275px) {
+  .redButton {
+    font-size  : 16px;
+    line-height: 21px;
+  }
+}
+
+@media(max-width: 990px) {
+  .redButton {
+    padding: 12px 24px;
+  }
+}
+
+@media(max-width: 650px) {
+  .redButton {
+    font-size  : 12px;
+    line-height: 19px;
+    padding    : 8px 20px;
+  }
+}

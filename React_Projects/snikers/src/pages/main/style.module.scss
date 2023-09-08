@@ -1,0 +1,54 @@
+.banner {
+  background-color: #F4EFE9;
+  border-radius   : 20px;
+  padding         : 88px 0 52px 61px;
+  margin-top      : 45px;
+  position        : relative;
+  overflow        : hidden;
+}
+
+.before {
+  position         : absolute;
+  top              : 5px;
+  background-size  : contain;
+  background-repeat: no-repeat;
+  width            : 100px;
+  height           : 100px;
+  left             : 15px;
+
+}
+
+.after {
+  position         : absolute;
+  top              : 0;
+  background-repeat: no-repeat;
+  right            : 0;
+  bottom           : -20px;
+  width            : 66%;
+  background-size  : contain;
+
+}
+
+.title {
+  font-size    : 38px;
+  line-height  : 46px;
+  margin-bottom: 10px;
+  font-weight  : 700;
+}
+
+.span {
+  color: #8BB43C;
+}
+
+.button {
+  font-weight   : 700;
+  font-size     : 16px;
+  line-height   : 19px;
+  color         : #FFFFFF;
+  text-align    : center;
+  background    : #A5D364;
+  border-radius : 110px;
+  padding       : 15px 52px;
+  text-transform: uppercase;
+  border        : none;
+}

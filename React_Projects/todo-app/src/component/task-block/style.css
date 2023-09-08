@@ -1,0 +1,9 @@
+.block-line {
+    display         : flex;
+    background-color: #6279B8;
+    padding         : 20px;
+    border-radius   : 30px;
+    position        : relative;
+    padding-right   : 85px;
+    margin-bottom   : 15px;
+}

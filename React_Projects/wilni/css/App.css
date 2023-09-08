@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #2F2F2F;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+  color: #2F2F2F;
+}
+
+.container {
+  max-width: 1630px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100vh;
+}
+
+.title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: #2F2F2F;
+}
+
+.description {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.button-transparent {
+  background-color: transparent;
+  border-radius: 8px;
+  border: 3px solid #B31217;
+  padding: 12px 32px;
+  color: #B31217;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.button-transparent:hover {
+  color: #2F2F2F;
+  border: 3px solid #2F2F2F;
+}
+
+.red {
+  color: #B31217;
+}
+
+@media (max-width: 610px) {
+  .title {
+    font-size: 28px;
+    line-height: 41px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .button-transparent {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .helpArmy__buttons {
+    padding: 0 15px;
+  }
+  .button-transparent {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}

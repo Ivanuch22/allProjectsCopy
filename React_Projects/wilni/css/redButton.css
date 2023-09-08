@@ -1,0 +1,20 @@
+.redButton {
+  font-family: 'Oswald';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 12px 32px;
+  border-radius: 8px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  background: linear-gradient(273.47deg, #E52D27 0%, #B31217 100%);
+}
+
+.redButton:hover {
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  background: linear-gradient(273.47deg, #E72F29 0%, #E72F29 100%);
+}

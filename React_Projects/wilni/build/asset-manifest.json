@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/wilni/static/css/main.9995b6b8.css",
+    "main.js": "/wilni/static/js/main.28d8dba5.js",
+    "static/media/mainPhoto.jpg": "/wilni/static/media/mainPhoto.fe094dc88d93cf308548.jpg",
+    "static/media/secondSlide.jpg": "/wilni/static/media/secondSlide.93d7bd43f45cdec5568d.jpg",
+    "static/media/about.jpg": "/wilni/static/media/about.536bc1081ec110bb7c69.jpg",
+    "static/media/helpArmy.jpg": "/wilni/static/media/helpArmy.03a562e9d65b34e14299.jpg",
+    "static/media/aero.jpg": "/wilni/static/media/aero.7cd94399b28ac89ca04e.jpg",
+    "static/media/helpChildren.jpg": "/wilni/static/media/helpChildren.876e214b732c82bdc11b.jpg",
+    "static/media/rowSecondImg.jpg": "/wilni/static/media/rowSecondImg.6517799f88643591e729.jpg",
+    "static/media/secondBannerImg.jpg": "/wilni/static/media/secondBannerImg.9b94060415bbdc18769f.jpg",
+    "static/media/rowFirstImg.jpg": "/wilni/static/media/rowFirstImg.225f20f2ee05764f13fe.jpg",
+    "static/media/rowForthImg.jpg": "/wilni/static/media/rowForthImg.a7bb716b488de922e5f1.jpg",
+    "static/media/firstBannerImg.jpg": "/wilni/static/media/firstBannerImg.6e8351cd4205bacb693b.jpg",
+    "static/media/deadImage.jpg": "/wilni/static/media/deadImage.78baa00887db498e1d15.jpg",
+    "static/media/rowThirdImg.jpg": "/wilni/static/media/rowThirdImg.ad1ffda10d123e2be094.jpg",
+    "static/media/thirdBannerImg.jpg": "/wilni/static/media/thirdBannerImg.ab195ba46327e8d1c84f.jpg",
+    "static/media/white-logo.svg": "/wilni/static/media/white-logo.a1be564830cf87d7e292bf23d4582b1d.svg",
+    "static/media/smallImg.jpg": "/wilni/static/media/smallImg.8f7e3ac0945207565631.jpg",
+    "static/media/logo.svg": "/wilni/static/media/logo.aeb1e699921e0f1b9f403c0dc1406d6f.svg",
+    "static/media/link-img.svg": "/wilni/static/media/link-img.03d477b3d4704e56cc23c36126147b3e.svg",
+    "static/media/lang.svg": "/wilni/static/media/lang.e65a04c6f784ec7b3f8cb331a75a8117.svg",
+    "index.html": "/wilni/index.html",
+    "static/media/homeIcon.svg": "/wilni/static/media/homeIcon.621c1fca7ffcdd266522cca82c7cdc55.svg",
+    "static/media/arrow-down.svg": "/wilni/static/media/arrow-down.9be8586c573ab47e4b4ac7564d53011d.svg",
+    "static/media/prev-arrow.svg": "/wilni/static/media/prev-arrow.69f9d00ec0845554bec4918602e34f80.svg",
+    "static/media/next-arrow.svg": "/wilni/static/media/next-arrow.513aad46852778cd11271ff9c6d27dad.svg",
+    "static/media/arrowIcon.svg": "/wilni/static/media/arrowIcon.35ac05b6ee38850f963c7f7c1a7e94d7.svg",
+    "static/media/arrow.svg": "/wilni/static/media/arrow.7ce9cf56e0fce6e249954524254d402f.svg",
+    "main.9995b6b8.css.map": "/wilni/static/css/main.9995b6b8.css.map",
+    "main.28d8dba5.js.map": "/wilni/static/js/main.28d8dba5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9995b6b8.css",
+    "static/js/main.28d8dba5.js"
+  ]
+}
